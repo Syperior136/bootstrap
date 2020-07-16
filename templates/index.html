@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class = "container">
+    <div class = "row justify-content-center">
+        <div class = "col">
+            <form action = "{{url_for('index')}}" method = "post">
+                <h2>What is your name?</h2>
+                <input name = "name" class="form-control" type="text" placeholder="Name">
+
+<h2>What is my favorite color?</h2>
+<select name = "q1" class="form-control form-control-sm">
+    <option selected>Answer</option>
+  <option value = "a">Blue</option>
+  <option value = "b">Green</option>
+  <option value = "c">Gray</option>
+</select>
+<br>
+<h2>What grade will I be going to next school year?</h2>
+<select name = "q2" class="form-control form-control-sm">
+    <option selected>Answer</option>
+  <option value = "a">8th grade</option>
+  <option value = "b">9th grade</option>
+  <option value = "c">10th grade</option>
+</select>
+<br>
+<h2>What is my favorite sport to watch?</h2>
+<select name = "q3" class="form-control form-control-sm">
+    <option selected>Answer</option>
+  <option value = "a">Football</option>
+  <option value = "b">Basketball</option>
+  <option value = "c">Baseball</option>
+</select>
+<br>
+<h2>What is my least favorite sport to watch?</h2>
+<select name = "q4" class="form-control form-control-sm">
+    <option selected>Answer</option>
+  <option value = "a">Soccer</option>
+  <option value = "b">Tennis</option>
+  <option value = "c">Golf</option>
+</select>
+<br>
+<h2>What is my favorite season?</h2>
+<select name = "q5" class="form-control form-control-sm">
+    <option selected>Answer</option>
+  <option value = "a">Summer</option>
+  <option value = "b">Fall</option>
+  <option value = "c">Winter</option>
+  <option value = "d">Spring</option>
+</select>
+<br>
+<h2>What is my least favorite season?</h2>
+<select name = "q6" class="form-control form-control-sm">
+    <option selected>Answer</option>
+  <option value = "a">Summer</option>
+  <option value = "b">Spring</option>
+  <option value = "c">Winter</option>
+  <option value = "d">Fall</option>
+</select>
+<br>
+<h2>Which of the following is my favorite book from the Harry Potter series?</h2>
+<select name = "q7" class="form-control form-control-sm">
+    <option selected>Answer</option>
+  <option value = "a">The Sorcerer's Stone</option>
+  <option value = "b">The Order of the Pheonix</option>
+  <option value = "c">The Prisoner of Azkaban</option>
+</select>
+<br>
+
+ </div>
+ <br>
+</div>
+        <div class = "row justify-content-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+            </form>
+
+{% endblock %}
